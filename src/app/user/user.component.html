@@ -1,1 +1,37 @@
 <p>Név: {{userData.name}}</p>
+
+<table>
+    <tr>
+      <th>ID</th>
+      <td>{{ userData?.id }}</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>{{ userData?.name }}</td>
+    </tr>
+    <tr>
+      <th>Username</th>
+      <td>{{ userData?.username }}</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>{{ userData?.email }}</td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td>{{ userData?.address.street }}, {{ userData?.address.suite }}, {{ userData?.address.city }}, {{ userData?.address.zipcode }}</td>
+    </tr>
+    <tr>
+      <th>Phone</th>
+      <td>{{ userData?.phone }}</td>
+    </tr>
+    <tr>
+      <th>Website</th>
+      <td>{{ userData?.website }}</td>
+    </tr>
+    <tr>
+      <th>Company</th>
+      <td>{{ userData?.company.name }}, {{ userData?.company.catchPhrase }}, {{ userData?.company.bs }}</td>
+    </tr>
+  </table>
+  
